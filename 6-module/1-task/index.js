@@ -21,7 +21,6 @@ export default class UserTable {
 
   render() {
     this.elem = document.createElement('TABLE');
-    this.elem.className = 'new-table'; //под вопросом
     this.elem.insertAdjacentHTML("beforeend", ` <thead>
       <tr>
         <th>Имя</th>
