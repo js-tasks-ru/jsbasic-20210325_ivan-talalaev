@@ -2,11 +2,10 @@ function initCarousel() {
   let carouselArrowLeft = document.querySelector(".carousel__arrow_left");
   let carouselArrowRight = document.querySelector(".carousel__arrow_right");
   let slider = document.querySelector(".carousel__inner");
-  let carouselInner = document.querySelector('.carousel__inner');
   let slideQuantity = document.querySelectorAll('.carousel__slide').length;
-  let sliderWidth = carouselInner.offsetWidth;
+  let sliderWidth = slider.offsetWidth;
   let x = 0;
-
+  console.log(sliderWidth)
   carouselArrowLeft.style.display = 'none';
   carouselArrowLeft.addEventListener('click', function() {
     if (x < 0){
